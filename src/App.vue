@@ -1,10 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import { ref, watchEffect } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const plants = ref([])
 
-watchEffect(async () => {
+onMounted(async () => {
   try {
     plants.value = await fetch(`/api/plants`).then((response) => response.json())
   } catch (error) {

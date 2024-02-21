@@ -1,9 +1,11 @@
+// @api/handler won't be available before build.
+// @ts-ignore
 import { handler } from '@api/handler'
 import process from 'node:process'
 import express from 'express'
 import sirv from 'sirv'
 
-const PORT = process.env.PORT || 5173
+const PORT = process.env.PORT || 4173
 const base = process.env.BASE || '/'
 
 const server = express()

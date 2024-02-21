@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     pluginAPIRoutes({
-      server: './server.js'
+      server: './src/custom-server/server.ts'
     })
   ],
   resolve: {
