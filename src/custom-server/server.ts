@@ -1,3 +1,5 @@
+// @api/handler won't be available before build.
+// @ts-ignore
 import { handler } from '@api/handler'
 import process from 'node:process'
 import express from 'express'
